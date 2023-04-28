@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED11513729F2C9F30030D7D4 /* gameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11513629F2C9F30030D7D4 /* gameBrain.swift */; };
 		ED1F8B2D29EC347500C5748E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F8B2C29EC347500C5748E /* AppDelegate.swift */; };
 		ED1F8B2F29EC347500C5748E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F8B2E29EC347500C5748E /* SceneDelegate.swift */; };
-		ED1F8B3129EC347500C5748E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F8B3029EC347500C5748E /* ViewController.swift */; };
+		ED1F8B3129EC347500C5748E /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F8B3029EC347500C5748E /* gameViewController.swift */; };
 		ED1F8B3429EC347500C5748E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1F8B3229EC347500C5748E /* Main.storyboard */; };
 		ED1F8B3629EC347500C5748E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1F8B3529EC347500C5748E /* Assets.xcassets */; };
 		ED1F8B3929EC347500C5748E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1F8B3729EC347500C5748E /* LaunchScreen.storyboard */; };
+		EDEFC3F229F7F83300599AAE /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFC3F129F7F83300599AAE /* mainViewController.swift */; };
+		EDEFC3F429F7F86000599AAE /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFC3F329F7F86000599AAE /* settingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED11513629F2C9F30030D7D4 /* gameBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameBrain.swift; sourceTree = "<group>"; };
 		ED1F8B2929EC347500C5748E /* TicTacToeIphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToeIphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1F8B2C29EC347500C5748E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED1F8B2E29EC347500C5748E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED1F8B3029EC347500C5748E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED1F8B3029EC347500C5748E /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
 		ED1F8B3329EC347500C5748E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED1F8B3529EC347500C5748E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED1F8B3829EC347500C5748E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED1F8B3A29EC347500C5748E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDEFC3F129F7F83300599AAE /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		EDEFC3F329F7F86000599AAE /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED11513229F2C6DE0030D7D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED1F8B3229EC347500C5748E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED11513329F2C6F00030D7D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDEFC3F129F7F83300599AAE /* mainViewController.swift */,
+				EDEFC3F329F7F86000599AAE /* settingViewController.swift */,
+				ED1F8B3029EC347500C5748E /* gameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ED11513829F2C9F80030D7D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED11513629F2C9F30030D7D4 /* gameBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ED1F8B2029EC347500C5748E = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +90,9 @@
 			children = (
 				ED1F8B2C29EC347500C5748E /* AppDelegate.swift */,
 				ED1F8B2E29EC347500C5748E /* SceneDelegate.swift */,
-				ED1F8B3029EC347500C5748E /* ViewController.swift */,
-				ED1F8B3229EC347500C5748E /* Main.storyboard */,
+				ED11513829F2C9F80030D7D4 /* Model */,
+				ED11513229F2C6DE0030D7D4 /* View */,
+				ED11513329F2C6F00030D7D4 /* Controller */,
 				ED1F8B3529EC347500C5748E /* Assets.xcassets */,
 				ED1F8B3729EC347500C5748E /* LaunchScreen.storyboard */,
 				ED1F8B3A29EC347500C5748E /* Info.plist */,
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED1F8B3129EC347500C5748E /* ViewController.swift in Sources */,
+				ED11513729F2C9F30030D7D4 /* gameBrain.swift in Sources */,
+				ED1F8B3129EC347500C5748E /* gameViewController.swift in Sources */,
+				EDEFC3F229F7F83300599AAE /* mainViewController.swift in Sources */,
 				ED1F8B2D29EC347500C5748E /* AppDelegate.swift in Sources */,
 				ED1F8B2F29EC347500C5748E /* SceneDelegate.swift in Sources */,
+				EDEFC3F429F7F86000599AAE /* settingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +328,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +336,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nihal.TicTacToeIphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,8 +357,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +365,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nihal.TicTacToeIphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
